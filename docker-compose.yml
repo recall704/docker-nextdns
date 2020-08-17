@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  nextdns:
+    image: steeef/nextdns
+    container_name: nextdns
+    restart: always
+    environment:
+      - NEXTDNS_ID=000000
+    ports:
+      - "53:53/tcp"
+      - "53:53/udp"
